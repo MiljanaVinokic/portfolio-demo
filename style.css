@@ -411,7 +411,249 @@ footer .social-btn-list li a:hover {
 
 
 
+/*media queries*/
+
+@media only screen and (min-width: 600px) {
+	body {
+		font-size: 1em;
+	}
+	h2 {
+		font-size: 2.2em;
+	}
+	nav ul li {
+		margin-right: 60px;
+	}
+	nav ul li:last-child {
+		margin-right: 0;
+	}
+	.intro-headings h1 {
+		font-size: 3em;
+	}
+	.intro-headings h4 {
+		font-size: 1.1;
+		letter-spacing: 0.3em;
+	}
+	.intro .continut-btn {
+		background-size: 54px 30px;
+		padding-bottom: 45px; 
+	}
+	.project-extra-info li {
+		margin-left: 30%;
+	}
+}
+
+@media only screen and (min-width: 790px) {
+	.skill {
+		max-width: none;
+		width: 30%;
+		margin-right: 5px;
+		float: left;
+		padding: 100px 0;
+	}
+	.skill:last-child {
+		margin-right: 0;
+	}
+	.skills-list:after, .contact-list:after {
+	    display: block;
+	    content: "";
+	    visibility: hidden;
+	    overflow: hidden;
+	    width: 0;
+	    height: 0;
+	    font-size: 0;
+	    line-height: 0;
+	    clear: both;
+	}
+	.project-visible-content {
+		padding-top: 50px;
+	}
+	.project-extra-info li {
+		margin-left: 35%;
+	}
+	.contact-list {
+		margin-bottom: 100px;
+	}
+	.contact-list li {
+		box-sizing: border-box;
+		width: 33.333333%;
+		padding: 0 20px;
+		float: left;
+	}
+	footer .social-btn-list {
+		float: right;
+		margin: 0;
+	}
+	footer p {
+		float: left;
+		padding-top: 7px;
+	}
+	footer:after {
+	    display: block;
+	    content: "";
+	    visibility: hidden;
+	    overflow: hidden;
+	    width: 0;
+	    height: 0;
+	    font-size: 0;
+	    line-height: 0;
+	    clear: both;
+	}
+}
+
+@media only screen and (min-width: 920px){
+	h2 {
+		font-size: 3.75em;
+	}
+	.container, .container-sm {
+		padding:0;
+	}
+	.intro {
+		padding-top: 230px
+	}
+	.intro-headings {
+		margin-bottom: 200px;
+	}
+	.intro-headings h1 {
+		font-size: 5em;
+	}
+	.intro-headings h4 {
+		font-size: 1.5em;
+		letter-spacing: 0.5em;
+	}
+	.skill {
+		box-sizing: border-box;
+		width: 33.333333%;
+		height: 400px;
+		margin-right: 0;
+		padding: 100px 6%;
+		position: relative;
+	}
+	.skill.photogr {
+		background: #000 url('images/camera.jpg') no-repeat;
+		background-position: 50% 50%;
+	}
+	.skill.illustr {
+		background: #000 url('images/illust.jpg') no-repeat;
+		background-position: 50% 50%;
+	}
+	.skill.edit {
+		background: #000 url('images/edit.jpg') no-repeat;
+		background-position: 50% 50%;
+	}
+	.skill h5 {
+		font-size: 1.4em;
+		color: #fff;
+	}
+	.skill p {
+		color: #e0e0e0;
+		opacity: 0;
+		-webkit-transform: translate3d(0,-100px,0);
+		-moz-transform: translate3d(0,-100px,0);
+		transform: translate3d(0,-100px,0);
+		transition: all 0.5s ease;
+	}
+	.skill .skill-divider {
+		display: block;
+		position: absolute;
+		bottom: 80px;
+		left: 50%;
+		width: 200px;
+		margin-left: -100px;
+		height: 3px;
+		border-radius: 2px;
+		background-color: #58b458;
+		-webkit-transform: translate3d(0,-120px,0);
+		-moz-transform: translate3d(0,-120px,0);
+		transform: translate3d(0,-120px,0);
+		transition: all 0.3s ease;
+
+	}
+
+	.skill .skill-divider:before {
+		display: block;
+		content:"";
+		position: absolute;
+		width: 7px;
+		height: 7px;
+		top: -2px;
+		left: 50%;
+		margin-left: -2px;
+		border-radius: 4px;
+		background-color: #58b458;
+	}
+	.skill:hover{
+		cursor: pointer;
+	}
+	.skill:hover p {
+		opacity: 1;
+		-webkit-transform: translate3d(0,0,0);
+		-moz-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+	.skill:hover .skill-divider {
+		-webkit-transform: translate3d(0,0,0);
+		-moz-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+	.project-visible-content {
+		text-align: left;
+	}
+	.project-visible-content h3 {
+		font-size: 2.25em;
+	}
+	.project-visible-content blockquote {
+		width: 65%;
+		float: left;
+	}
+	.project-visible-content .quote-author-info {
+		width: 35%;
+		float: right;
+		text-align: right;
+	}
+
+	.project-text-wrapper:after{
+		display: block;
+	    content: "";
+	    visibility: hidden;
+	    overflow: hidden;
+	    width: 0;
+	    height: 0;
+	    font-size: 0;
+	    line-height: 0;
+	    clear: both;
+	}
+
+	.project-extra-toggle.button {
+		margin-top: 30px;
+	}
+	.project-extra-info li {
+		margin-left: 40%;
+	}
 
 
+}
 
+@media only screen and (min-width: 1105px){
+	.project-extra-images {
+		float: right;
+	}
+	.project-extra-info {
+		float: left;
+		width: 390px;
+	}
+	.project-extra-info li {
+		margin-left: 80px;
+	}
+	.project-extra:after{
+		display: block;
+	    content: "";
+	    visibility: hidden;
+	    overflow: hidden;
+	    width: 0;
+	    height: 0;
+	    font-size: 0;
+	    line-height: 0;
+	    clear: both;
+	}
 
+}
