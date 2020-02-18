@@ -326,17 +326,13 @@ nav ul li a {
 }
 
 /*GOOGLE FORM*/
-.form {
+#ss-form {
     margin-bottom: 60px;
 }
-
-
-
-.form .q-short, .form .q-long {
+#ss-form .ss-q-short, #ss-form .ss-q-long {
     display: block;
     box-sizing: border-box;
     width: 100%;
-
     border: none;
     border-bottom: 5px solid #58b458;
     font-size: 1.125em;
@@ -345,22 +341,13 @@ nav ul li a {
     background-color: rgba(193, 245, 196, 0.4);
     margin-bottom: 40px;
 }
-
-.quantumWizTextinputPapertextareaInput , .quantumWizTextinputPaperinputInputArea, .quantumWizTextinputPaperinputInput {
-    width: 100%;
-    height: 200%
-    font-size: 1.125em;
-    font-family: Lato, Arial, Calibri, sans-serif;
-    background-color: rgba(193, 245, 196, 0.4);
-
-}
-.form .q-short {
+#ss-form .ss-q-short {
     padding: 15px 40px;
 }
-.form .q-long {
+#ss-form .ss-q-long {
     padding: 15px 40px 110px 40px;
 }
-.form .button {
+#ss-form .button {
     border: none;
     outline: none;
     cursor: pointer;
